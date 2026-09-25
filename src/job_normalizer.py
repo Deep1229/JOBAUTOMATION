@@ -6,4 +6,5 @@ def normalize_job(job):
         "url": job.get("absolute_url"),
         "source": "greenhouse",
         "job_id": job.get("id"),
+        "description": job.get("content", "")
     }

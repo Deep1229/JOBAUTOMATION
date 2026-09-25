@@ -1,0 +1,60 @@
+candidate:
+  name: "Candidate"
+  location: "Hyderabad, India"
+  experience_years: 2
+
+target_roles:
+  - Software Engineer
+  - Backend Engineer
+  - Cloud Engineer
+  - Cloud Software Engineer
+  - AWS Software Engineer
+  - Associate Software Engineer
+
+skills:
+  primary:
+    - Go
+    - Golang
+    - AWS
+    - AWS Lambda
+    - Step Functions
+    - REST APIs
+    - Jenkins
+    - Git
+    - Terraform
+    - python
+    - Java
+
+
+  secondary:
+    - Java
+    - MongoDB
+    - CloudWatch
+    - Postman
+    - Insomnia
+    - CI/CD
+
+locations:
+  preferred:
+    - Hyderabad
+    - Telangana
+    - India
+    - Remote India
+
+employment:
+  minimum_experience: 1
+  maximum_experience: 4
+
+company_preference:
+  product_company: true
+  startup: true
+  saas: true
+
+exclude:
+  - internship
+  - unpaid
+  - senior
+  - staff
+  - principal
+  - manager
+  - architect
