@@ -1,5 +1,5 @@
-from database.db import save_job
-from database.db import get_connection
+from src.database.db import save_job
+from src.database.db import get_connection
 
 
 def save_jobs(jobs):

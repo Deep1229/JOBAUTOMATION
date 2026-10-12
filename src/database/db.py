@@ -1,7 +1,8 @@
 import sqlite3
+from pathlib import Path
 
-
-DB_PATH = "data/jobs.db"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DB_PATH = PROJECT_ROOT / "data" / "jobs.db"
 
 
 def get_connection():

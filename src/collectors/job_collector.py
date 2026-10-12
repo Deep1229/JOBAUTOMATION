@@ -1,6 +1,7 @@
-from config_loader import load_companies
-from collectors.greenhouse import get_greenhouse_jobs
-from job_normalizer import normalize_job
+from src.config_loader import load_companies
+from src.collectors.greenhouse import get_greenhouse_jobs
+from src.job_normalizer import normalize_job
+from src.database.job_repository import save_jobs
 
 
 def collect_jobs():
@@ -20,3 +21,18 @@ def collect_jobs():
                 all_jobs.append(normalized_job)
 
     return all_jobs
+
+
+if __name__ == "__main__":
+    from src.database.db import create_tables
+    from src.database.job_repository import save_jobs
+
+    create_tables()
+    jobs = collect_jobs()
+    save_jobs(jobs)
+
+    print(f"Collected {len(jobs)} jobs")
+    print("Jobs saved to the database.")
+
+    for job in jobs:
+        print(job)
